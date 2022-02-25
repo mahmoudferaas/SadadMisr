@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SadadMisr.DAL\SadadMisr.DAL.csproj" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="10.1.1" PrivateAssets="none" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" PrivateAssets="none" />
+		<PackageReference Include="FluentValidation" Version="10.1.0" PrivateAssets="none" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.1.0" PrivateAssets="none" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+	</ItemGroup>
+</Project>

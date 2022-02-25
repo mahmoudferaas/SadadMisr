@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\WORK\SADAD_MISR\Publish</_PublishTargetUrl>
+    <History>True|2022-02-14T10:56:36.4079355Z;True|2022-02-14T11:31:06.8139972+02:00;True|2022-02-13T11:02:20.7833215+02:00;True|2022-02-12T15:36:22.0267029+02:00;True|2022-02-12T15:31:25.6947007+02:00;True|2022-02-12T13:52:15.3263092+02:00;True|2022-02-12T13:07:39.9388276+02:00;False|2022-02-12T13:05:35.5132677+02:00;True|2022-02-10T17:25:36.1601690+02:00;True|2022-02-10T17:00:35.8434347+02:00;True|2022-02-10T16:26:02.1786810+02:00;True|2022-02-10T16:25:23.6503653+02:00;False|2022-02-10T16:23:54.9470090+02:00;True|2022-02-10T13:43:45.3557248+02:00;True|2022-02-06T19:05:53.0760210+02:00;</History>
+  </PropertyGroup>
+</Project>

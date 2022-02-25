@@ -3,3 +3,10 @@
 ################################################################################
 
 /SadadMisr.API/SadadMisr.API/bin
+/SadadMisr.API/.vs/SadadMisr.API
+/SadadMisr.API/SadadMisr.API/.config
+/SadadMisr.API/SadadMisr.API/obj
+/SadadMisr.API/SadadMisr.BLL/bin
+/SadadMisr.API/SadadMisr.BLL/obj
+/SadadMisr.API/SadadMisr.DAL/bin
+/SadadMisr.API/SadadMisr.DAL/obj
