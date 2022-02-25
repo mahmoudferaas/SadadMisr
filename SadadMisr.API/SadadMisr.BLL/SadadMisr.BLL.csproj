@@ -13,5 +13,6 @@
 		<PackageReference Include="FluentValidation" Version="10.1.0" PrivateAssets="none" />
 		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.1.0" PrivateAssets="none" />
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 </Project>

@@ -1,10 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SadadMisr.DAL.Entities;
-
+using SadadMisr.DAL.Entities.Identity;
 
 namespace SadadMisr.DAL
 {
-    public class SadadMasrDbContext : DbContext , ISadadMasrDbContext
+    public class SadadMasrDbContext : IdentityDbContext<
+    ApplicationUser, ApplicationRole, string,
+    IdentityUserClaim<string>, ApplicationUserRole, IdentityUserLogin<string>,
+    IdentityRoleClaim<string>, IdentityUserToken<string>> , ISadadMasrDbContext
+
     {
         public SadadMasrDbContext(DbContextOptions<SadadMasrDbContext> options) : base(options)
         {
@@ -18,11 +24,11 @@ namespace SadadMisr.DAL
         public DbSet<ShippingLine> ShippingLines { get; set; }
         public DbSet<ShippingAgency> ShippingAgencies { get; set; }
         public DbSet<Port> Ports { get; set; }
-        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(SadadMasrDbContext).Assembly);
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(IdentityDbContext).Assembly);
         }
     }
 }

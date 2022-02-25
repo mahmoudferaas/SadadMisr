@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using SadadMisr.BLL.Models.Identity;
+using System.Collections.Generic;
 
 namespace SadadMisr.BLL.Models.Users.Create
 {
     public class CreateUserRequest
     {
-        public List<UserModel> Data { get; set; }
+        public List<CreateUserModel> Data { get; set; }
 
     }
 }

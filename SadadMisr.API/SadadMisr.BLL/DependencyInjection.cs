@@ -16,6 +16,8 @@ namespace SadadMisr.BLL
             services.AddTransient<IBillService, BillService>();
             services.AddTransient<IInvoiceService, InvoiceService>();
             services.AddTransient<IPaymentService, PaymentService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IIdentityService, IdentityService>();
 
             return services;
         }

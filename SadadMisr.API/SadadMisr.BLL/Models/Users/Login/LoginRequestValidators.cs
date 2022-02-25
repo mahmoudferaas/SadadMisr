@@ -6,7 +6,7 @@ namespace SadadMisr.BLL.Models.Users.Login
     {
         public LoginRequestValidators()
         {
-            RuleFor(a => a.UserName).NotEmpty().NotNull();
+            RuleFor(a => a.Email).NotEmpty().NotNull();
             RuleFor(a => a.Password).NotEmpty().NotNull();
         }
     }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SadadMisr.DAL
 {
-    public interface ISadadMasrDbContext 
+    public interface ISadadMasrDbContext
     {
         DbSet<Manifest> Manifests { get; set; }
         DbSet<Bill> Bills { get; set; }
@@ -15,8 +15,9 @@ namespace SadadMisr.DAL
         DbSet<ShippingLine> ShippingLines { get; set; }
         DbSet<ShippingAgency> ShippingAgencies { get; set; }
         DbSet<Port> Ports { get; set; }
-        DbSet<User> Users { get; set; }
+
         int SaveChanges();
+
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SadadMisr.BLL.Common;
 using SadadMisr.BLL.Models;
 using SadadMisr.BLL.Models.Payments.Create;
@@ -12,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace SadadMisr.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class PaymentsController : ControllerBase

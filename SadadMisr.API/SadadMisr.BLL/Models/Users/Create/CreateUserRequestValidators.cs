@@ -11,7 +11,7 @@ namespace SadadMisr.BLL.Models.Users.Create
             {
                 ac.RuleFor(a => a.UserName).NotEmpty().NotNull();
                 ac.RuleFor(a => a.Email).NotEmpty().NotNull().EmailAddress();
-                ac.RuleFor(a => a.Password).NotEmpty().NotNull();
+                //ac.RuleFor(a => a.Password).NotEmpty().NotNull();
             });
         }
     }

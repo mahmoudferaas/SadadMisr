@@ -1,10 +1,9 @@
 ﻿using System;
 
-namespace SadadMisr.BLL.Models.Users.Login
+namespace SadadMisr.BLL.Models.Users.RefreshToken
 {
-    public class LoginOutput
+    public class RefreshTokenOutput
     {
-        public string UserId { get; set; }
         public string AccessToken { get; set; }
         public DateTime? AccessTokenExpiryDate { get; set; }
         public string RefreshToken { get; set; }
