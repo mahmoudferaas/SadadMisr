@@ -288,11 +288,6 @@ namespace SadadMisr.BLL.Services.Implementations
                         }
                     }
 
-
-
-
-
-
                 }
 
                 return new Output<bool>(true);
