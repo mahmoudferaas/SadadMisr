@@ -47,7 +47,8 @@ namespace SadadMisr.DAL
                         ValidateIssuerSigningKey = true,
                         ValidAudience = configuration["JwtAuth:Audience"],
                         ValidIssuer = configuration["JwtAuth:Issuer"],
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtAuth:Key"]))
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtAuth:Key"])),
+                        ValidateLifetime = true,
                     };
                 });
 

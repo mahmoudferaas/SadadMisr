@@ -58,7 +58,7 @@ namespace SadadMisr.BLL.Services.Implementations
             {
                 ValidateIssuer = true,
                 ValidateAudience = true,
-                ValidateLifetime = false,
+                ValidateLifetime = true,
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = _configuration["JwtAuth:Issuer"],
                 ValidAudience = _configuration["JwtAuth:Audience"],
