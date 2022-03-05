@@ -65,7 +65,7 @@ namespace SadadMisr.BLL.Services.Implementations
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtAuth:Key"])),
                 ClockSkew = TimeSpan.Zero
             };
-
+            //
             var tokenHandler = new JwtSecurityTokenHandler();
             SecurityToken securityToken;
 
