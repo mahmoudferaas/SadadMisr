@@ -1,5 +1,6 @@
 ﻿using SadadMisr.DAL.Common;
 using System;
+using System.Collections.Generic;
 
 namespace SadadMisr.DAL.Entities
 {
@@ -32,5 +33,6 @@ namespace SadadMisr.DAL.Entities
         public Bill Bill { get; set; }
         public Currency Currency { get; set; }
         //public ShippingLine ShippingLine { get; set; }
+        public ICollection<InvoiceItem> InvoiceItems { get; set; }
     }
 }

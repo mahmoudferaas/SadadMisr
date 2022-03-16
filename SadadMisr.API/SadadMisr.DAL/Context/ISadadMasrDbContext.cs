@@ -15,6 +15,7 @@ namespace SadadMisr.DAL
         DbSet<ShippingLine> ShippingLines { get; set; }
         DbSet<ShippingAgency> ShippingAgencies { get; set; }
         DbSet<Port> Ports { get; set; }
+        DbSet<InvoiceItem> InvoiceItems { get; set; }
 
         int SaveChanges();
 

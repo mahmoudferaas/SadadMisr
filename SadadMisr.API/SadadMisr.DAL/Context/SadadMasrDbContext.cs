@@ -25,6 +25,8 @@ namespace SadadMisr.DAL
         public DbSet<ShippingAgency> ShippingAgencies { get; set; }
         public DbSet<Port> Ports { get; set; }
 
+        public DbSet<InvoiceItem> InvoiceItems { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
